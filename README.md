@@ -17,6 +17,7 @@ The objects would go through the vertex and geometry shaders, then go through th
 Same as for Forward rendering, the objects will go through the vertex and geometry shaders, but then will pass through a fragment shader that doesn’t apply lighting to it. Instead, it will go through another step that applies all the passes to the objects as one collective light source (for lack of a better term). It will then only render once as opposed to (light number) amount of time.
 
 
+
 Flowchart:
 
 Forward:
