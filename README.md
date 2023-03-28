@@ -16,33 +16,6 @@ The objects would go through the vertex and geometry shaders, then go through th
 
 Same as for Forward rendering, the objects will go through the vertex and geometry shaders, but then will pass through a fragment shader that doesn’t apply lighting to it. Instead, it will go through another step that applies all the passes to the objects as one collective light source (for lack of a better term). It will then only render once as opposed to (light number) amount of time.
 
-
 Flowchart:
 
-Forward:
-
-Subshader
-
-1 Pass
-
-Vertex and Fragment (or Surface) shaders
-
-Render
-
-Deferred:
-
-Subshader
-
-1st Pass
-
-Vertex and Fragment (or Surface) shaders for first light
-
-2nd Pass
-
-Vertex and Fragment (or Surface) shaders for second light
-
-3rd Pass
-
-Vertex and Fragment (or Surface) shaders for third light
-
-Render all processes together
+![Flow](https://user-images.githubusercontent.com/116387786/228305080-897c7f74-066e-4c79-bd26-978b6a6de686.png)
