@@ -1,6 +1,6 @@
 # Individual_Assignment_2
  
-Forward vs. Deferred Rendering
+## Forward vs. Deferred Rendering
 
 
 Forward rendering consists of rendering an object x amount of times, where x is the number of lights that hit it. For example, if we needed to calculate the color, depth and normal lighting of a few objects, forward rendering will apply color to the object and render it, depth and re-render it, and finally the normals and re-render it again. This process is linear and consumes more gpu power than for the deferred rendering.
