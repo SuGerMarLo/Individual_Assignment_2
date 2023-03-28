@@ -19,3 +19,21 @@ Same as for Forward rendering, the objects will go through the vertex and geomet
 Flowchart:
 
 ![Flow](https://user-images.githubusercontent.com/116387786/228305080-897c7f74-066e-4c79-bd26-978b6a6de686.png)
+
+
+## Toon Square Wave Shader
+
+![Toon_Wave](https://user-images.githubusercontent.com/116387786/228310395-8e0a3c79-f3bc-4e9a-9dec-7aaaf7374d9d.png)
+
+The wave code is the same as the one in the lecture, however I changed a calculation to make the waves more square.
+Under the `			float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t * 2 + v.vertex.x * _Freq * 2) * _Amp;` line I added the following code:
+
+![Wave Code](https://user-images.githubusercontent.com/116387786/228311803-6bffe29d-e097-4660-baf5-9a11e7483da8.png)
+
+This forces the wave to stick to either a value of 1, 0 or -1 depending on the current sin value, essentially clamping it to one of those 3 values.
+
+For the toon shding component I added the essential components from the lecture's toon shader into the wave shader like the _RampTex, calling the _RampTex, LightingToonRamp method, and I multiplied the wave's current albedo with the wave's _Tint for the toon shader to have a color as well.
+
+![Toon](https://user-images.githubusercontent.com/116387786/228313044-0f336e41-376c-4854-98b7-c5a722f9a7c2.png)
+
+^^^ LightingToonRamp method
