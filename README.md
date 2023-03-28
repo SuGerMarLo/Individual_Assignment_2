@@ -23,6 +23,11 @@ Flowchart:
 
 ## Toon Square Wave Shader
 
+The below background image was taken from: https://www.pinterest.com/spencer2246/pixel-art-topdown/
+
+![471d570cfe8646ce81b99ddd1baec08a](https://user-images.githubusercontent.com/116387786/228314311-aeadf945-2ff5-481a-9aa1-b74253511cb7.jpg)
+
+
 ![Toon_Wave](https://user-images.githubusercontent.com/116387786/228310395-8e0a3c79-f3bc-4e9a-9dec-7aaaf7374d9d.png)
 
 The wave code is the same as the one in the lecture, however I changed a calculation to make the waves more square.
