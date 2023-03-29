@@ -60,11 +60,15 @@ I added a bump map shader onto the background plane to give the scene a bit more
 
 ![Bump Map](https://user-images.githubusercontent.com/116387786/228673239-72d0cfa6-47a0-4add-9684-8a261803a500.png)
 
+![Bump Map Code](https://user-images.githubusercontent.com/116387786/228674730-4a031f28-3ad1-4826-a365-7ef4b202763a.png)
+
 I added the color property as well as called the variable, then simply multiplied the albedo value by it.
 
 I didn't change much simply because I had no real idea what to change aside from this.
 
 The second thing I added was an outline shader. Again, the shader was from the lecture, however I changed to major things in this one to compensate for the minor change in the other shader.
+
+![Outline](https://user-images.githubusercontent.com/116387786/228674759-9c3ac957-3cef-49e4-a996-98cd0daa83fa.png)
 
 ![Outline Code](https://user-images.githubusercontent.com/116387786/228673782-be75e235-5ed0-4a9e-86cb-6c25f45635c0.png)
 
