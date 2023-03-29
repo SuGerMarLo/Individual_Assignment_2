@@ -49,7 +49,7 @@ I then added the background on a plane above and a moving cube (with WASD) to ac
 ![Moving Ship](https://user-images.githubusercontent.com/116387786/228319872-c305e173-97ef-45b4-83bf-56622b26bd71.png)
 
 
-## Code explanation 1
+## Code Explanation 1
 
 [Blur.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11105245/Blur.pdf)
 
@@ -74,3 +74,7 @@ The second thing I added was an outline shader. Again, the shader was from the l
 
 1. (The first line) I made it so that the position/offset of the outline would change based off of its color. If the outline is white, it will be to the right, if it's black, it will be to the left; the rest of the colors all have different positions, not limited to only one hue. The numbers in the code are only meant to centralize it since without those it would only move in the positives.
 2. (The second line) I made it so that the color would change based on the object's position. To the left would be black, the right would be white and the middle would be whatever color you chose at the time.
+
+## Code Explanation 2
+
+[Shadow.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11106019/Shadow.pdf)
