@@ -78,3 +78,19 @@ The second thing I added was an outline shader. Again, the shader was from the l
 ## Code Explanation 2
 
 [Shadow.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11106019/Shadow.pdf)
+
+## Chosen Shader Explanation
+
+I chose the vertex extrusion shader, which I'm surprised I haven't explained yet.
+
+![Extrusion](https://user-images.githubusercontent.com/116387786/228681591-5146be23-019e-4ef2-ada1-56d02bfefae5.png)
+
+The code is actualy surprisingly simple.
+
+You start off with the basic things like your _MainTex in the properties as well as setting your albedo color in the surface shader (you find these in most shaders).
+
+Next, you create an extrusion amount property called "_Amount" and define it too.
+
+Finally, you create a vertex shader function and, to each of the object's vertices (v.vertex.xyz), add it's normal value (v.normal) multiplied by whatever extrusion amount desires (_Amount).
+
+![Extrusion Diagram](https://user-images.githubusercontent.com/116387786/228684099-eb8acd51-c838-4fff-99b1-601fca8b5935.png)
