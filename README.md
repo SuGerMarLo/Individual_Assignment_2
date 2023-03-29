@@ -37,7 +37,7 @@ Under the `			float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t * 2 
 
 This forces the wave to stick to either a value of 1, 0 or -1 depending on the current sin value, essentially clamping it to one of those 3 values.
 
-For the toon shding component I added the essential components from the lecture's toon shader into the wave shader like the _RampTex, called the _RampTex, LightingToonRamp method, and I multiplied the wave's current albedo with the wave's _Tint for the toon shader to have a color as well.
+For the toon shding component I added the essential components from the lecture's toon shader into the wave shader like the _RampTex, defined the _RampTex, LightingToonRamp method, and I multiplied the wave's current albedo with the wave's _Tint for the toon shader to have a color as well.
 
 ![Toon](https://user-images.githubusercontent.com/116387786/228313044-0f336e41-376c-4854-98b7-c5a722f9a7c2.png)
 
@@ -62,7 +62,7 @@ I added a bump map shader onto the background plane to give the scene a bit more
 
 ![Bump Map Code](https://user-images.githubusercontent.com/116387786/228674730-4a031f28-3ad1-4826-a365-7ef4b202763a.png)
 
-I added the color property as well as called the variable, then simply multiplied the albedo value by it.
+I added the color property as well as defined the variable, then simply multiplied the albedo value by it.
 
 I didn't change much simply because I had no real idea what to change aside from this.
 
