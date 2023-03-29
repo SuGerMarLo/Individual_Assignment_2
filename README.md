@@ -94,3 +94,7 @@ Next, you create an extrusion amount property called "_Amount" and define it too
 Finally, you create a vertex shader function and, to each of the object's vertices (v.vertex.xyz), add it's normal value (v.normal) multiplied by whatever extrusion amount desires (_Amount).
 
 ![Extrusion Diagram](https://user-images.githubusercontent.com/116387786/228684099-eb8acd51-c838-4fff-99b1-601fca8b5935.png)
+
+While this may a funny example, the concept still applies. Some things in games (like a ball or a balloon) expand; this shader can make iit easier to replicate that effect.
+
+Another example of this could be for sheep. Since animals like sheep require shearing, we can use the vertex extrusion shader to show when a sheep is slowly gaining more and more wool.
