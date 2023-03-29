@@ -51,4 +51,6 @@ I then added the background on a plane above and a moving cube to act as a ship 
 
 ## Code explanation 1
 
-[Blur.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11105025/Blur.pdf)
+[Blur.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11105245/Blur.pdf)
+
+
