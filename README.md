@@ -47,3 +47,8 @@ For the toon shding component I added the essential components from the lecture'
 I then added the background on a plane above and a moving cube to act as a ship by using the old input system and clamping it to stop it from going on land.
 
 ![Moving Ship](https://user-images.githubusercontent.com/116387786/228319872-c305e173-97ef-45b4-83bf-56622b26bd71.png)
+
+
+## Code explanation 1
+
+[Blur.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11105025/Blur.pdf)
