@@ -37,7 +37,7 @@ Under the `			float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t * 2 
 
 This forces the wave to stick to either a value of 1, 0 or -1 depending on the current sin value, essentially clamping it to one of those 3 values.
 
-For the toon shding component I added the essential components from the lecture's toon shader into the wave shader like the _RampTex, calling the _RampTex, LightingToonRamp method, and I multiplied the wave's current albedo with the wave's _Tint for the toon shader to have a color as well.
+For the toon shding component I added the essential components from the lecture's toon shader into the wave shader like the _RampTex, called the _RampTex, LightingToonRamp method, and I multiplied the wave's current albedo with the wave's _Tint for the toon shader to have a color as well.
 
 ![Toon](https://user-images.githubusercontent.com/116387786/228313044-0f336e41-376c-4854-98b7-c5a722f9a7c2.png)
 
@@ -54,3 +54,19 @@ I then added the background on a plane above and a moving cube (with WASD) to ac
 [Blur.pdf](https://github.com/SuGerMarLo/Individual_Assignment_2/files/11105245/Blur.pdf)
 
 
+## Bump Map and Outline Shader (Second Shader Task)
+
+I added a bump map shader onto the background plane to give the scene a bit more depth. The code was the same as the one from the lecture, however, I decided to add a color variable to allow it to change to a "night" theme.
+
+![Bump Map](https://user-images.githubusercontent.com/116387786/228673239-72d0cfa6-47a0-4add-9684-8a261803a500.png)
+
+I added the color property as well as called the variable, then simply multiplied the albedo value by it.
+
+I didn't change much simply because I had no real idea what to change aside from this.
+
+The second thing I added was an outline shader. Again, the shader was from the lecture, however I changed to major things in this one to compensate for the minor change in the other shader.
+
+![Outline Code](https://user-images.githubusercontent.com/116387786/228673782-be75e235-5ed0-4a9e-86cb-6c25f45635c0.png)
+
+1. (The first line) I made it so that the position/offset of the outline would change based off of its color. If the outline is white, it will be to the right, if it's black, it will be to the left; the rest of the colors all have different positions, not limited to only one hue. The numbers in the code are only meant to centralize it since without those it would only move in the positives.
+2. (The second line) I made it so that the color would change based on the object's position. To the left would be black, the right would be white and the middle would be whatever color you chose at the time.
